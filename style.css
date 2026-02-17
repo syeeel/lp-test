@@ -195,6 +195,7 @@ strong { font-weight: 700; }
   flex-shrink: 0;
   height: 40px;
   width: auto;
+  border-radius: 8px;
 }
 
 .logo-text {
@@ -1727,7 +1728,6 @@ strong { font-weight: 700; }
 
 .footer-logo .logo-icon {
   height: 32px;
-  filter: brightness(0) invert(1);
 }
 
 .footer .logo-main {
