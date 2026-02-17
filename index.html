@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>派遣保育士のお仕事探し｜ブレイブ保育士</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- グレインオーバーレイ -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ヘッダー -->
+  <header class="header header--transparent" id="top">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        <img class="logo-icon" src="logo/mynavi_logo.png" alt="マイナビグループ" height="40">
+        <div class="logo-text">
+          <span class="logo-main">BRAVE</span>
+          <span class="logo-sub">マイナビグループ</span>
+        </div>
+      </a>
+      <nav class="gnav">
+        <ul class="gnav-list" id="gnav-list">
+          <li><a href="#about" class="gnav-link">ブレイブとは</a></li>
+          <li><a href="#workstyle" class="gnav-link">働き方</a></li>
+          <li><a href="#daily" class="gnav-link">1日の流れ</a></li>
+          <li><a href="#register" class="btn-register-nav">登録はこちら</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ファーストビュー -->
+  <section class="fv" id="fv">
+    <div class="fv-bg" aria-hidden="true">
+      <img src="images/top-image.png" alt="" class="fv-bg-img" id="fv-bg-img">
+    </div>
+    <div class="fv-overlay" aria-hidden="true"></div>
+    <div class="fv-content">
+      <p class="fv-eyebrow anim-item">保育士派遣のお仕事探し</p>
+      <h1 class="fv-title anim-item">
+        <span class="fv-title-line">自分に合った</span>
+        <span class="fv-title-line fv-title-accent">理想の職場。</span>
+      </h1>
+      <p class="fv-text anim-item">
+        仕事内容や勤務時間・就業場所など、さまざまな条件で<br>
+        ライフスタイルに合わせて自由に選択できるのが<strong>派遣という働き方</strong>です。
+      </p>
+      <div class="fv-actions anim-item">
+        <a href="#register" class="btn-primary">
+          <span>登録はこちら</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-4-4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#about" class="btn-ghost-light">詳しく見る</a>
+      </div>
+      <div class="fv-stats anim-item">
+        <div class="fv-stat">
+          <span class="fv-stat-num">10,000</span>
+          <span class="fv-stat-label">件以上の求人</span>
+        </div>
+        <div class="fv-stat-divider"></div>
+        <div class="fv-stat">
+          <span class="fv-stat-num">98</span>
+          <span class="fv-stat-label">%の満足度</span>
+        </div>
+        <div class="fv-stat-divider"></div>
+        <div class="fv-stat">
+          <span class="fv-stat-num">最短1h</span>
+          <span class="fv-stat-label">で給与振込</span>
+        </div>
+      </div>
+    </div>
+    <div class="fv-scroll-hint anim-item" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="fv-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ブレイブとは -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header anim-item">
+        <span class="section-tag">ABOUT</span>
+        <h2 class="section-title">ブレイブとは</h2>
+        <p class="section-lead">厚生労働省認定の「優良派遣事業者」として、<br>保育士の皆さまが安心して働ける環境を提供しています。</p>
+      </div>
+
+      <div class="about-intro anim-item">
+        <div class="about-intro-image">
+          <img src="images/nursery-teacher.jpg" alt="保育士の仕事風景">
+        </div>
+        <div class="about-intro-text">
+          <p>仕事内容や勤務時間・就業場所などさまざまな条件でご自身のライフスタイルに合わせて自由に選択できるのが「派遣」という働き方。</p>
+          <br>
+          <p>また、「派遣」ならお仕事相談はじめ、<strong>就業後もあなたと派遣先企業の間に私たち派遣会社が入ってサポート</strong>するので、困ったときはいつでも気軽に相談できますよ。</p>
+          <br>
+          <p>まずは自分に合う働き方を見つけていきましょう！</p>
+        </div>
+      </div>
+
+      <div class="about-badge anim-item">
+        <div class="badge-inner">
+          <svg class="badge-icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M14 2l3.09 6.26L24 9.27l-5 4.87L20.18 21 14 17.77 7.82 21 9 14.14l-5-4.87 6.91-1.01L14 2z" fill="var(--amber)" stroke="var(--amber-dark)" stroke-width="1"/>
+          </svg>
+          <div class="badge-text">
+            <span class="badge-label">厚生労働省</span>
+            <strong>優良派遣事業者認定</strong>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="merit-heading anim-item">
+        ブレイブで働く<em>6つのメリット</em>
+      </h3>
+
+      <div class="merit-grid">
+        <div class="merit-card anim-item">
+          <div class="merit-card-accent"></div>
+          <div class="merit-number">01</div>
+          <div class="merit-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" fill="var(--primary-light)" opacity="0.7"/>
+              <path d="M20 10v8l5 3" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="20" cy="18" r="8" fill="none" stroke="var(--primary)" stroke-width="2"/>
+              <path d="M12 28h16" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="merit-title">給与即払いサービス</h4>
+          <p class="merit-desc">申請から<strong>最短1時間以内</strong>にお振込み。急な出費も安心です。</p>
+        </div>
+
+        <div class="merit-card anim-item">
+          <div class="merit-card-accent"></div>
+          <div class="merit-number">02</div>
+          <div class="merit-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" fill="var(--sage-light)" opacity="0.7"/>
+              <rect x="13" y="8" width="14" height="24" rx="3" fill="none" stroke="var(--sage-dark)" stroke-width="2"/>
+              <circle cx="20" cy="28" r="1.5" fill="var(--sage-dark)"/>
+              <line x1="16" y1="13" x2="24" y2="13" stroke="var(--sage-dark)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="merit-title">社内専用アプリ</h4>
+          <p class="merit-desc">チャットで気軽にやり取り。勤怠管理もアプリで<strong>簡単・便利</strong>。</p>
+        </div>
+
+        <div class="merit-card anim-item">
+          <div class="merit-card-accent"></div>
+          <div class="merit-number">03</div>
+          <div class="merit-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" fill="var(--primary-light)" opacity="0.5"/>
+              <rect x="10" y="14" width="20" height="16" rx="3" fill="none" stroke="var(--primary)" stroke-width="2"/>
+              <path d="M10 18h20" stroke="var(--primary)" stroke-width="2"/>
+              <path d="M16 10v4M24 10v4" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="20" cy="24" r="2" fill="var(--primary)"/>
+            </svg>
+          </div>
+          <h4 class="merit-title">オリジナル福利厚生</h4>
+          <p class="merit-desc"><strong>約2万点</strong>の商品と交換できるポイント制度。頑張りを還元。</p>
+        </div>
+
+        <div class="merit-card anim-item">
+          <div class="merit-card-accent"></div>
+          <div class="merit-number">04</div>
+          <div class="merit-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" fill="var(--lavender)" opacity="0.4"/>
+              <circle cx="15" cy="16" r="4" fill="none" stroke="var(--lavender-dark)" stroke-width="2"/>
+              <circle cx="25" cy="16" r="4" fill="none" stroke="var(--lavender-dark)" stroke-width="2"/>
+              <path d="M10 30c0-4 3-7 7-7h6c4 0 7 3 7 7" fill="none" stroke="var(--lavender-dark)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="merit-title">B-Friend 紹介制度</h4>
+          <p class="merit-desc">お友達を紹介で<strong>電子マネーギフト</strong>をプレゼント。</p>
+        </div>
+
+        <div class="merit-card anim-item">
+          <div class="merit-card-accent"></div>
+          <div class="merit-number">05</div>
+          <div class="merit-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" fill="var(--sage-light)" opacity="0.5"/>
+              <path d="M10 28l-2 4h6l-1-4" fill="none" stroke="var(--sage-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 18c0-6.6 5.4-12 12-12s12 5.4 12 12v2c0 3-1 5-3 7H11c-2-2-3-4-3-7v-2z" fill="none" stroke="var(--sage-dark)" stroke-width="2"/>
+              <path d="M16 22h8" stroke="var(--sage-dark)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="merit-title">LINE公式アカウント</h4>
+          <p class="merit-desc">LINEで気軽に相談OK。<strong>かんたんコミュニケーション</strong>。</p>
+        </div>
+
+        <div class="merit-card anim-item">
+          <div class="merit-card-accent"></div>
+          <div class="merit-number">06</div>
+          <div class="merit-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" fill="var(--amber-light)" opacity="0.5"/>
+              <path d="M12 8h16v24l-8-4-8 4V8z" fill="none" stroke="var(--amber-dark)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M16 16h8M16 20h6" stroke="var(--amber-dark)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="merit-title">ブレイブケアアカデミー</h4>
+          <p class="merit-desc">資格取得が<strong>受講料0円</strong>。キャリアアップを応援します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 派遣保育士の働き方 -->
+  <section class="section workstyle" id="workstyle">
+    <div class="container">
+      <div class="section-header anim-item">
+        <span class="section-tag">WORK STYLE</span>
+        <h2 class="section-title">派遣保育士の働き方</h2>
+        <p class="section-lead">あなたに合った働き方を見つけてみませんか？<br>さまざまなライフスタイルに合わせたお仕事をご用意しています。</p>
+      </div>
+
+      <div class="persona-grid">
+        <div class="persona-card anim-item" style="--card-hue: var(--primary);">
+          <div class="persona-top">
+            <span class="persona-label">TYPE A</span>
+            <div class="persona-avatar">
+              <img src="images/persona-a.jpg" alt="Aさん">
+            </div>
+          </div>
+          <h4 class="persona-name">Aさんの場合</h4>
+          <p class="persona-profile">扶養内・Wワーク希望</p>
+          <p class="persona-desc">家事や育児と両立したい方、学生さんなど、限られた時間の中で無理なく働きたい方に。</p>
+          <span class="persona-tag">施設派遣</span>
+        </div>
+
+        <div class="persona-card anim-item" style="--card-hue: var(--sage-dark);">
+          <div class="persona-top">
+            <span class="persona-label">TYPE B</span>
+            <div class="persona-avatar">
+              <img src="images/persona-b.jpg" alt="Bさん">
+            </div>
+          </div>
+          <h4 class="persona-name">Bさんの場合</h4>
+          <p class="persona-profile">正社員を目指したい</p>
+          <p class="persona-desc">まずは派遣で職場を体験。自分に合った園で正社員を目指せるから安心。</p>
+          <span class="persona-tag">紹介予定派遣</span>
+        </div>
+
+        <div class="persona-card anim-item" style="--card-hue: var(--lavender-dark);">
+          <div class="persona-top">
+            <span class="persona-label">TYPE C</span>
+            <div class="persona-avatar">
+              <img src="images/persona-c.jpg" alt="Cさん">
+            </div>
+          </div>
+          <h4 class="persona-name">Cさんの場合</h4>
+          <p class="persona-profile">子育て後の復帰希望</p>
+          <p class="persona-desc">ブランクがあっても大丈夫。ご家庭に合わせた柔軟な働き方が可能です。</p>
+          <span class="persona-tag">産休代替派遣</span>
+        </div>
+
+        <div class="persona-card anim-item" style="--card-hue: var(--amber-dark);">
+          <div class="persona-top">
+            <span class="persona-label">TYPE D</span>
+            <div class="persona-avatar">
+              <img src="images/persona-d.jpg" alt="Dさん">
+            </div>
+          </div>
+          <h4 class="persona-name">Dさんの場合</h4>
+          <p class="persona-profile">安定して長く働きたい</p>
+          <p class="persona-desc">雇用期間の心配なし。安定した雇用と充実の福利厚生で安心。</p>
+          <span class="persona-tag">無期雇用派遣</span>
+        </div>
+
+        <div class="persona-card anim-item" style="--card-hue: var(--mid);">
+          <div class="persona-top">
+            <span class="persona-label">TYPE E</span>
+            <div class="persona-avatar">
+              <img src="images/persona-e.jpg" alt="Eさん">
+            </div>
+          </div>
+          <h4 class="persona-name">Eさんの場合</h4>
+          <p class="persona-profile">スキマ時間を活用したい</p>
+          <p class="persona-desc">空いた日だけ働ける。自分のペースでさまざまな園を経験。</p>
+          <span class="persona-tag">スポット派遣</span>
+        </div>
+      </div>
+
+      <h3 class="type-heading anim-item">5つの派遣形態</h3>
+
+      <div class="type-grid">
+        <div class="type-card anim-item">
+          <div class="type-number">01</div>
+          <div class="type-body">
+            <h4 class="type-name">施設派遣</h4>
+            <p class="type-desc">保育園・幼稚園・こども園でのお仕事。書類やイベントの負担が少なく、保育に集中できます。</p>
+          </div>
+        </div>
+        <div class="type-card anim-item">
+          <div class="type-number">02</div>
+          <div class="type-body">
+            <h4 class="type-name">紹介予定派遣</h4>
+            <p class="type-desc">最長6ヶ月の派遣後、双方合意で正社員へ。職場を体験してから判断できるので安心。</p>
+          </div>
+        </div>
+        <div class="type-card anim-item">
+          <div class="type-number">03</div>
+          <div class="type-body">
+            <h4 class="type-name">産休代替派遣</h4>
+            <p class="type-desc">産休・育休スタッフの代替業務。短期〜長期まで柔軟に対応でき、多様な経験が積めます。</p>
+          </div>
+        </div>
+        <div class="type-card anim-item">
+          <div class="type-number">04</div>
+          <div class="type-body">
+            <h4 class="type-name">無期雇用派遣</h4>
+            <p class="type-desc">ブレイブの正社員として派遣先勤務。期間制限なしで安定した雇用と福利厚生が魅力。</p>
+          </div>
+        </div>
+        <div class="type-card anim-item">
+          <div class="type-number">05</div>
+          <div class="type-body">
+            <h4 class="type-name">スポット派遣</h4>
+            <p class="type-desc">1日〜数日の短期勤務。都合に合わせて日程を選べ、さまざまな園での経験を積めます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1日の流れ -->
+  <section class="section daily" id="daily">
+    <div class="container">
+      <div class="section-header anim-item">
+        <span class="section-tag">DAILY SCHEDULE</span>
+        <h2 class="section-title">保育園での1日の流れ</h2>
+        <p class="section-lead">派遣保育士さんの一般的なスケジュール例です。</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">7:00</div>
+          <div class="timeline-content">
+            <h4>出勤・登園対応</h4>
+            <p>園児の受け入れ、保護者からの伝達事項の確認を行います。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">8:00</div>
+          <div class="timeline-content">
+            <h4>朝の会・自由遊び</h4>
+            <p>朝の挨拶や出席確認。園庭やお部屋での自由遊びを見守ります。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">9:30</div>
+          <div class="timeline-content">
+            <h4>クラス別保育活動</h4>
+            <p>歌・工作・お絵描き・リトミックなど年齢に合わせた活動。季節に応じてプール遊びも。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">11:30</div>
+          <div class="timeline-content">
+            <h4>給食</h4>
+            <p>配膳の準備、食事の介助、アレルギー対応の確認などを行います。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">12:30</div>
+          <div class="timeline-content">
+            <h4>お昼寝</h4>
+            <p>午睡の準備と見守り。寝かしつけや呼吸チェックを行います。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">14:30</div>
+          <div class="timeline-content">
+            <h4>起床・おやつ</h4>
+            <p>お昼寝から起こし、着替えのお手伝い。おやつの準備と配膳。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">15:30</div>
+          <div class="timeline-content">
+            <h4>午後の活動・自由遊び</h4>
+            <p>お散歩や園庭遊び、室内遊びなど。子どもたちと楽しい時間を過ごします。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">16:30</div>
+          <div class="timeline-content">
+            <h4>帰りの会・降園対応</h4>
+            <p>お迎えの保護者への引き渡しと1日の報告をします。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">17:00</div>
+          <div class="timeline-content">
+            <h4>延長保育・片付け</h4>
+            <p>延長保育の見守り。掃除・片付け・翌日の準備を行います。</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">19:00</div>
+          <div class="timeline-content">
+            <h4>終業</h4>
+            <p>業務終了。残業はほとんどなく、定時退勤が基本です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section" id="register">
+    <div class="cta-shapes" aria-hidden="true">
+      <div class="cta-circle cta-circle--1"></div>
+      <div class="cta-circle cta-circle--2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-inner anim-item">
+        <p class="cta-eyebrow">REGISTRATION</p>
+        <h2 class="cta-title">まずはお気軽に<br>ご登録ください</h2>
+        <p class="cta-text">あなたのライフスタイルに合った保育のお仕事を、<br>専任のコーディネーターがご提案いたします。</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-cta-large">
+            <span>Web登録はこちら</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-4-4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="tel:0120-000-000" class="btn-cta-tel">
+            <svg class="tel-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M4 1h4l2 4-2.5 1.5a11 11 0 005 5L14 9l4 2v4a2 2 0 01-2 2A16 16 0 011 4a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span class="tel-number">0120-000-000</span>
+            <span class="tel-hours">受付 9:00〜19:00（平日）</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="#top" class="footer-logo">
+          <img class="logo-icon" src="logo/mynavi_logo.png" alt="マイナビグループ" height="32">
+          <div class="logo-text">
+            <span class="logo-main">BRAVE</span>
+            <span class="logo-sub">マイナビグループ</span>
+          </div>
+        </a>
+        <ul class="footer-links">
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; BRAVE Inc. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
