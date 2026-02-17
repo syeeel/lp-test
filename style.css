@@ -793,13 +793,13 @@ strong { font-weight: 700; }
 
 .merit-card {
   background: var(--white);
-  border-radius: 16px;
-  padding: 32px 24px 28px;
-  text-align: center;
+  border-radius: 20px;
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.04);
   transition: all 0.4s var(--ease-out-expo);
+  display: flex;
+  flex-direction: column;
 }
 
 .merit-card:hover {
@@ -808,43 +808,75 @@ strong { font-weight: 700; }
   border-color: transparent;
 }
 
-.merit-card-accent {
+/* Photo card — image top area */
+.merit-card-img {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+
+.merit-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.merit-card:hover .merit-card-img img {
+  transform: scale(1.06);
+}
+
+.merit-card-img-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary), var(--primary-vivid));
-  opacity: 0;
-  transition: opacity 0.3s;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.25));
 }
 
-.merit-card:hover .merit-card-accent {
-  opacity: 1;
-}
-
-.merit-number {
+.merit-card-img .merit-number {
+  position: absolute;
+  top: 12px;
+  left: 14px;
   font-family: var(--font-accent);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 800;
-  color: var(--primary);
+  color: var(--white);
   letter-spacing: 2px;
-  margin-bottom: 16px;
-  opacity: 0.5;
+  background: rgba(0, 131, 188, 0.8);
+  backdrop-filter: blur(4px);
+  padding: 3px 10px;
+  border-radius: 100px;
 }
 
-.merit-icon-wrap {
-  margin-bottom: 16px;
+/* Gradient card — colored visual area */
+.merit-card--gradient .merit-card-visual {
+  height: 160px;
+  background: linear-gradient(135deg, var(--grad-from), var(--grad-to));
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.merit-icon-wrap svg {
-  transition: transform 0.4s var(--ease-spring);
+.merit-number-lg {
+  font-family: var(--font-accent);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 4px;
+  transition: color 0.4s;
 }
 
-.merit-card:hover .merit-icon-wrap svg {
-  transform: scale(1.12);
+.merit-card:hover .merit-number-lg {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Card body — text area */
+.merit-card-body {
+  padding: 20px 20px 24px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .merit-title {
@@ -1286,84 +1318,86 @@ strong { font-weight: 700; }
 
 .steps-flow {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 16px;
+  flex-direction: column;
+  gap: 0;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Vertical connector line */
+.steps-flow::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 28px;
+  bottom: 28px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--primary-vivid, #00B4D8));
+  opacity: 0.2;
 }
 
 .step-card {
-  background: var(--silk);
-  border-radius: 20px;
-  padding: 36px 28px 32px;
-  text-align: center;
-  width: 240px;
-  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 28px 0;
+  position: relative;
   transition: all 0.4s var(--ease-out-expo);
-  border: 1px solid transparent;
 }
 
-.step-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-  background: var(--white);
-  border-color: rgba(0, 131, 188, 0.1);
+.step-card:hover .step-content {
+  transform: translateX(4px);
 }
 
 .step-number {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background: var(--primary);
-  color: var(--white);
+  background: var(--white);
+  border: 2px solid var(--primary);
+  color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-accent);
-  font-weight: 800;
-  font-size: 1.3rem;
-  margin: 0 auto 20px;
+  font-weight: 900;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
 }
 
-.step-icon-wrap {
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
+.step-card:hover .step-number {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 4px 16px rgba(0, 131, 188, 0.3);
 }
 
-.step-icon-wrap svg {
-  transition: transform 0.4s var(--ease-spring);
-}
-
-.step-card:hover .step-icon-wrap svg {
-  transform: scale(1.1);
+.step-content {
+  flex: 1;
+  padding-top: 4px;
+  transition: transform 0.3s var(--ease-out-expo);
 }
 
 .step-title {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--ink);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .step-desc {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--ink-muted);
-  line-height: 1.7;
-}
-
-.step-arrow {
-  display: flex;
-  align-items: center;
-  padding-top: 80px;
-  opacity: 0.35;
+  line-height: 1.8;
 }
 
 /* Steps stagger */
 .steps-flow .anim-item:nth-child(1) { transition-delay: 0ms; }
-.steps-flow .anim-item:nth-child(2) { transition-delay: 100ms; }
-.steps-flow .anim-item:nth-child(3) { transition-delay: 200ms; }
-.steps-flow .anim-item:nth-child(4) { transition-delay: 300ms; }
-.steps-flow .anim-item:nth-child(5) { transition-delay: 400ms; }
+.steps-flow .anim-item:nth-child(2) { transition-delay: 120ms; }
+.steps-flow .anim-item:nth-child(3) { transition-delay: 240ms; }
 
 /* ========================================
    FAQ Section
@@ -1848,8 +1882,7 @@ strong { font-weight: 700; }
   }
 
   .step-card {
-    width: 200px;
-    padding: 28px 20px 24px;
+    padding: 24px 0;
   }
 
   .trust-bar-inner {
@@ -1978,7 +2011,8 @@ strong { font-weight: 700; }
 
   .merit-heading { font-size: 1.25rem; }
 
-  .merit-card { padding: 24px 18px 22px; }
+  .merit-card-body { padding: 16px 16px 20px; }
+  .merit-card-img { height: 140px; }
 
   /* Persona */
   .persona-grid {
@@ -2025,20 +2059,24 @@ strong { font-weight: 700; }
 
   /* Steps */
   .steps-flow {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    max-width: 100%;
   }
 
   .step-card {
-    width: 100%;
-    max-width: 320px;
-    padding: 28px 24px 24px;
+    gap: 16px;
+    padding: 20px 0;
   }
 
-  .step-arrow {
-    padding-top: 0;
-    transform: rotate(90deg);
+  .step-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
+  .steps-flow::before {
+    left: 23px;
+    top: 24px;
+    bottom: 24px;
   }
 
   /* FAQ */
